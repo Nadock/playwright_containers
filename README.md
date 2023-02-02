@@ -29,3 +29,7 @@ Additionally, to configure VSCode to see the installed dependencies correctly, a
     ]
 }
 ```
+
+## License
+
+The contents of this repo are all licensed under the `MIT` license, please use it as you see fit.
