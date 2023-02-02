@@ -1,0 +1,18 @@
+services:
+  python:
+    build:
+      dockerfile: ./docker/python/Dockerfile
+      context: "."
+    depends_on:
+      - chrome
+    environment:
+      CHROME_URL: http://chrome:3000
+    volumes:
+      - ./script.py:/opt/app/script.py
+      - ./screenshots:/opt/app/screenshots
+
+
+  chrome:
+    image: browserless/chrome
+    ports:
+      - 3000:3000

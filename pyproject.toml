@@ -1,0 +1,22 @@
+[project]
+name = ""
+version = ""
+description = ""
+authors = [
+    {name = "Riley Chase", email = "riley.chase@rileychase.net"},
+]
+dependencies = [
+    "playwright>=1.30.0",
+]
+requires-python = ">=3.11"
+license = {text = "MIT"}
+
+[tool.pdm]
+[tool.pdm.dev-dependencies]
+dev = [
+    "black>=23.1.0",
+    "mypy>=0.991",
+    "rope>=1.7.0",
+    "pylint>=2.16.0",
+    "isort>=5.12.0",
+]
